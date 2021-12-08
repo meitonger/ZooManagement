@@ -1,0 +1,23 @@
+public class Bear extends Animals{
+	
+	public Bear() {
+
+	}
+	
+	public Bear(String animalNames, String animalColor,int animalAge) {
+		this.animalNames = animalNames;
+		this.animalColor = animalColor;
+		this.animalAge=animalAge;
+	}
+    
+	@Override
+	
+	public String Info() {
+
+        String Info = 
+				"Name: "+getName()+"Color"+getColor()+"Age"+getAge();
+		return Info;
+	}
+
+	
+
