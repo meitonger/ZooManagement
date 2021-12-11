@@ -1,9 +1,12 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		
+
+		List<Bear> bears = new ArrayList<>();
+
 		Bear bear = new Bear();
 		bear.setName("bear");
 		Elephant elephant = new Elephant();
@@ -28,7 +31,12 @@ public class Main {
 	    if(operation.equals("1")) {
 //			bear.information();
 			checkKeeper(scanner, bear);
-	    }
+			Bear bear1 = new Bear();
+			System.out.println("please give the bear name");
+			String name = scanner.next();
+			bear1.setName(name);
+			bears.add(bear1);
+		}
 	    if(operation.equals("2")) {
 //	    	tiger.information();
 			checkKeeper(scanner, tiger);
@@ -39,6 +47,7 @@ public class Main {
 	    }
 	    if(operation.equals("4")) {
 			zookeeper.information();
+			System.out.println("current we have " + bears.size() + " bears");
 	    }
 	    
 	    else
