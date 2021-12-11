@@ -1,23 +1,48 @@
-public class Bear extends Animals{
-	
+import java.util.Scanner;
+
+
+public class Bear  implements infoReaderAnimals{
+
 	public Bear() {
 
 	}
 	
-	public Bear(String animalNames, String animalColor,int animalAge) {
-		this.animalNames = animalNames;
-		this.animalColor = animalColor;
-		this.animalAge=animalAge;
-	}
-    
-	@Override
+
+
 	
 	public String Info() {
 
         String Info = 
-				"Name: "+getName()+"Color"+getColor()+"Age"+getAge();
+        	
+				"Name: BEAR"+" Color: Brown"+" Age: 2";
 		return Info;
 	}
 
+
+
+	@Override
+	public void information(Animals animals) {
+        System.out.println("Animals information " + animals.getName() +animals.getColor()+animals.getAge());
+		
+	}
+	
+	
+	  
+	
+    
 	
 
+
+
+
+	
+	
+
+	
+	
+	
+
+
+
+
+}
