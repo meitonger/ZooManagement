@@ -1,0 +1,25 @@
+
+public class Tiger implements infoReaderAnimals  {
+	
+	public Tiger() {
+
+	}
+	
+
+
+	
+	public String Info() {
+
+        String Info = 
+				"Name: Tiger"+" Color: Black & Yellow"+" Age: 4";
+		return Info;
+	}
+
+
+	@Override
+	public void information(Animals animals) {
+        System.out.println("Animals information " + animals.getName() +animals.getColor()+animals.getAge());
+		
+	}
+
+}
