@@ -1,5 +1,0 @@
-
-public interface infoReaderAnimals {
-	
-	void information(Animals animals);
-}

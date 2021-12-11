@@ -1,6 +1,0 @@
-
-public interface keeperInfo {
-	
-	public String personalInfo() ;
-
-}
