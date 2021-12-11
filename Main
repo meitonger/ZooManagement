@@ -1,11 +1,109 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
 		
 		Bear bear = new Bear();
+		Elephant elephant = new Elephant();
+		Tiger tiger = new Tiger();
 		
-		System.out.println(bear.Info());
+		ZooKeeper zookeeper = new ZooKeeper();
+
+	    
+
+	    System.out.print("------- ZOO MANAGEMENT -------  ");
+	    System.out.print("\n   Bear                 [1] ");
+		System.out.print("\n   Tiger                [2] ");
+		System.out.print("\n   Elephant             [3] ");
+		System.out.print("\n   Manager List         [4] ");
+		System.out.print("\n QUIT                   [5] ");
+		System.out.print("\n Your Selection is: ");
+	    
+		Scanner scanner = new Scanner(System.in);
+	    String operation = scanner.next();
+	    
+	    if(operation.equals("1")) {
+	    	System.out.println(bear.Info());
+	    	System.out.println("Are you zoo keeper Peter Y/N ?");
+	    	
+		    String keeper = scanner.next();
+		    
+			if(keeper.equals("Y")) {
+		    	System.out.println("Feed Y/N ?");
+		    	String feed = scanner.next();
+		    	if(feed.equals("Y")) {
+			    	System.out.println("Bear is feeded has been record");
+			    	
+				}
+		    	if(feed.equals("N")) {
+		    		System.out.println("Please feed on time");
+	            
+		    }
+			}
+			else
+				System.out.println("You do not have access");
+	    
+	    	
+	    }
+	    if(operation.equals("2")) {
+	    	System.out.println(tiger.Info());
+	    	System.out.println("Are you zoo keeper John Y/N ?");
+	    	
+		    String keeper = scanner.next();
+		    
+			if(keeper.equals("Y")) {
+		    	System.out.println("Feed Y/N ?");
+		    	String feed = scanner.next();
+		    	if(feed.equals("Y")) {
+			    	System.out.println("Tiger is feeded has been record");
+			    	
+				}
+		    	if(feed.equals("N")) {
+		    		System.out.println("Please feed on time");
+	            
+		    }
+			}
+			else
+				System.out.println("You do not have access");
+	    
+	    }
+	    if(operation.equals("3")) {
+	    	System.out.println(elephant.Info());
+	    	System.out.println("Are you zoo keeper David Y/N ?");
+	    	
+		    String keeper = scanner.next();
+		    
+			if(keeper.equals("Y")) {
+		    	System.out.println("Feed Y/N ?");
+		    	String feed = scanner.next();
+		    	if(feed.equals("Y")) {
+			    	System.out.println("Elephant is feeded has been record");
+			    	
+				}
+		    	if(feed.equals("N")) {
+		    		System.out.println("Please feed on time");
+	            
+		    }
+			}
+			else
+				System.out.println("You do not have access");
+	    
+	    }
+	    
+	    if(operation.equals("4")) {
+	    	System.out.println(zookeeper.information(zookeeper ));
+	    }
+	    
+	    else
+	    	System.out.println("System quit successfully");
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+
 	}
-	
 }
